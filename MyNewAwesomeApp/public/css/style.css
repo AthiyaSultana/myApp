@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "SourceSansPro-ExtraLight";
+  src: url("bower_components/font-awesome/fonts/SourceSansPro-ExtraLight.eot?#iefix") format("embedded-opentype"), url("bower_components/font-awesome/fonts/SourceSansPro-ExtraLight.otf") format("opentype"), url("bower_components/font-awesome/fonts/SourceSansPro-ExtraLight.woff") format("woff"), url("bower_components/font-awesome/fonts/SourceSansPro-ExtraLight.ttf") format("truetype"), url("bower_components/font-awesome/fonts/SourceSansPro-ExtraLight.svg#SourceSansPro-ExtraLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SourceSansPro-Light";
+  src: url("bower_components/font-awesome/fonts/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("bower_components/font-awesome/fonts/SourceSansPro-Light.otf") format("opentype"), url("bower_components/font-awesome/fonts/SourceSansPro-Light.woff") format("woff"), url("bower_components/font-awesome/fonts/SourceSansPro-Light.ttf") format("truetype"), url("bower_components/font-awesome/fonts/SourceSansPro-Light.svg#SourceSansPro-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("bower_components/font-awesome/fonts/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("bower_components/font-awesome/fonts/SourceSansPro-Regular.otf") format("opentype"), url("bower_components/font-awesome/fonts/SourceSansPro-Regular.woff") format("woff"), url("bower_components/font-awesome/fonts/SourceSansPro-Regular.ttf") format("truetype"), url("bower_components/font-awesome/fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.btn {
+  padding: 3px 12px;
+  font-size: 12px;
+}
+.fixed {
+  position: fixed;
+  z-index: 999999;
+}
+
+.form-group > input[type="text"],
+.form-group > input[type="password"],
+.form-group > input[type="email"] {
+  border: 1px solid #cfdef1;
+  font-size: 13px;
+  height: 39px;
+  padding-left: 10px;
+  width: 100%;
+  border-radius: 0;
+}
+textarea {
+  border: 1px solid #cfdef1;
+  font-size: 13px;
+  height: 39px;
+  padding-left: 10px;
+  width: 100%;
+  border-radius: 0;
+  height: auto;
+}
+.container-fluid {
+  position: relative;
+}
+.banner {
+  display: block;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+}
+.banner .bannerText {
+  position: absolute;
+  top: 43%;
+  left: 0%;
+  color: #ffffff;
+  text-transform: capitalize;
+  width: 100%;
+}
+.banner .bannerText h1 {
+  font-size: 60px;
+  padding: 0 0 10px 0;
+  text-shadow: 0px 0 42px #FFFFFF;
+  font-family: "SourceSansPro-Regular";
+  margin: 0;
+}
+.banner .bannerText h2 {
+  font-size: 48px;
+  font-family: "SourceSansPro-Light";
+  margin: 0;
+}
+.customHeader {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 50px 0 0;
+}
+.customHeader ul {
+  float: right;
+  padding: 31px 0 0;
+}
+.customHeader ul li {
+  float: left;
+  padding: 0 15px;
+  border-right: 1px solid #ffffff;
+}
+.customHeader li:last-child {
+  border: 0;
+}
+.customHeader ul li a {
+  color: #ffffff;
+  font-family: "SourceSansPro-ExtraLight";
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.customHeader ul li a i {
+  font-size: 16px;
+  padding: 0 10px 0 0;
+}
+.signupFrom {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background: url("/public/images/sample.jpeg") no-repeat;
+  background-size: cover;
+}
+.signupFrom .signup {
+  padding: 187px 0 25px 0;
+}
+.signupFrom .signup .container {
+  background-color: #f3f3f3;
+  width: 900px;
+  padding: 26px;
+  min-height: 500px;
+}
+.signupFrom .signup .container h2 {
+  display: inline-block;
+  font-size: 16px;
+  padding: 0;
+}
+.signupFrom .signup .container h2 a {
+  font-size: 13px;
+}
+.signupFrom .signup .container h3 {
+  font-size: 24px;
+  padding: 30px 0 50px 0;
+  text-transform: capitalize;
+  text-align: center;
+  border-top: 2px solid #d8d8d8;
+}
+.signupFrom .signup .container .signLeft {
+  width: 50%;
+}
+.signupFrom .signup .container .signright {
+  width: 50%;
+}
+.signupFrom .signup .container form {
+  padding: 40px 0 0 0;
+}
+.signupFrom .signup .container form label {
+  font-weight: normal;
+  margin: 0 0 10px 0;
+  text-transform: capitalize;
+}
+.signupFrom .signup .container form .form-group {
+  display: inline-block;
+  width: 100%;
+  padding: 0 0 5px 0;
+  margin: 0;
+}
+.signupFrom .signup .container form .userType {
+  font-size: 20px;
+  padding: 10px 35px;
+}
+.signupFrom .signup .container form .userType i {
+  background-color: #f3f3f3;
+  border-radius: 50px;
+  color: #286090;
+  padding: 7px;
+  margin-right: 10px;
+}
+.signupFrom .signup .container form .nextBtn {
+  font-size: 18px;
+  margin: 30px 0 0;
+}
+.signupFrom .signup .container .signupComplete {
+  border-top: 2px solid #d8d8d8;
+  margin: 34px 0 0;
+  padding: 50px 0 0;
+}
+.signupFrom .signup .container .signupComplete p {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+.signupFrom .signupHeader {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 50px 0 0 0;
+}
+.signupFrom .signupFooter {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px 0;
+}
+ .signupFrom {
+    height: 1033px;
+  }
+  .signupFrom .signup .container {
+    width: 700px;
+  }
+  .signupFrom .signupFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }	
+   .signupFrom .signup {
+    padding: 187px 15px;
+  }
+  .signupFrom .signup .container {
+    width: 70%;
+  }
+  .signupFrom .signup .container .signLeft {
+    width: 100%;
+  }
+  .signupFrom .signup .container .signright {
+    width: 100%;
+  }
+  .signupFrom .signupFooter {
+    padding: 0 15px 10px 15px;
+    font-size: 15px;
+  }
+  .signupFrom .userType {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .signupFrom .nextBtn {
+    width: 10%;
+  }

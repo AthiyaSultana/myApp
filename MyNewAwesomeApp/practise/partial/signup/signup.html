@@ -1,0 +1,56 @@
+<div class="signupFrom">
+    <div class="col-md-12 signup">
+        <div class="container">
+        	<div ng-if="!hideForm">
+            <h2>Already a member? <a ui-sref="login">click here</a></h2>
+            <button type="button" ng-click="back()" class="btn btn-primary margin-left-15 left-arrow pull-right">Back
+            </button>
+        </div>
+            <form name="signupFrom" class="signupFrom1"  role="form" novalidate ng-if="!hideForm">
+                <h3>Enter your details to signup </h3>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6" ng-class="{'has-error':(signupFrom.name.$invalid && signupFrom.$submitted)}">
+                            <label>enter your name</label>
+                            <input type="text" class="form-control" ng-model="user.name" name="name" required />
+                            <p ng-show="signupFrom.name.$error.required && signupFrom.$submitted" class="help-block">Please enter your name</p>
+
+                        </div>
+                        <div class="col-md-6" ng-class="{'has-error':(signupFrom.email.$invalid && signupFrom.$submitted)}">
+                            <label>enter your email</label>
+
+                            <input type="email" class="form-control" ng-model="user.email" name="email" required />
+                            <p ng-show="signupFrom.email.$error.required && signupFrom.$submitted" class="help-block"> Please enter your email</p>
+                            <p ng-show="signupFrom.$submitted && signupFrom.email.$error.email" class="help-block"> Not a valid email</p>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6" ng-class="{'has-error':(signupFrom.password.$invalid && signupFrom.$submitted)}">
+                            <label>enter your password</label>
+
+                            <input type="password" class="form-control" ng-model="user.password" name="password" required />
+                            <p ng-show="signupFrom.password.$error.required && signupFrom.$submitted" class="help-block">Please Enter your password</p>
+
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-sm-6 col-lg-6" ng-class="{'has-error':(signupFrom.confirmPassword.$invalid && signupFrom.$submitted)}">
+                            <label>Confirm your password</label>
+
+                            <input type="text" class="form-control" ng-model="user.confirmPassword" name="confirmPassword" required />
+                            <p ng-show="signupFrom.confirmPassword.$error.required && signupFrom.$submitted" class="help-block">Please confirm your password</p>
+                            <p ng-show="signupFrom.$submitted && user.password!=user.confirmPassword" class="help-block">password doesnt matches</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <button class="btn btn-warning nextBtn" ng-click="createUser(signupFrom)">SignUp</button>
+                </div>
+                <p class="help-block" ng-show="error">{{error}}</p>
+            </form>
+            <div ng-if="hideForm">
+            	<a ui-sref="login">Click here login</a>
+            </div>
+        </div>
+    </div>
+</div>

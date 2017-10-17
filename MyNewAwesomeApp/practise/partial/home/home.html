@@ -1,0 +1,21 @@
+<div class="container-fluid resetRow">
+    <div class="banner">
+        <img src="public/images/sample.jpeg" alt="Banner" />
+        <div class="bannerText text-center">
+            <h1>Good Friends, Good Food,Good Time </h1>
+        </div>
+    </div>
+    <div class="customHeader">
+        <div class="container">
+            <ul ng-if="!currentUser._id">
+                <li><a ui-sref="login"><i class="fa fa-lock" aria-hidden="true"></i>sign in</a></li>
+                <li><a ui-sref="signup"><i class="fa fa-pencil" aria-hidden="true"></i>sign up</a></li>
+            </ul>
+            <ul ng-if="currentUser._id">
+                <li><a href="Javascript:void(0)">Welcome <span>{{currentUser.displayName}}</span></a></li>
+                <li> <a href="Javascript:void(0)" ng-click="goToHomepage()">Home</a></li>
+            </ul>
+        </div>
+    </div>
+   
+</div>

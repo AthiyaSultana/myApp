@@ -1,0 +1,30 @@
+<div>
+	
+	<form name="vendorForm" novalidate>
+		<div class="rowvendorForm" >
+		<div class="col-md-4">
+			<label>Vendor Name </label> 
+			<input type="text" ng-model="vendor.name" name="venodorName" required>
+			<p ng-show="vendorForm.$submitted && vendorForm.venodorName.$error.required" class="text-danger">Please Enter vendor Name</p>
+		</div>
+
+		<div class="col-md-4">
+			<label>Number Of Shops</label>
+			<input type="number" ng-model="vendor.numberOfShops" name="numberOfShops" required>
+			<p ng-show="vendorForm.$submitted && vendorForm.numberOfShops.$error.required" class="text-danger">Please Enter number of shops</p>
+		</div>
+		<div class="col-md-4">
+			<label>Shop City</label>
+			<input type="text" ng-model="vendor.city" name="city" required>
+			<p ng-show="vendorForm.$submitted && vendorForm.city.$error.required" class="text-danger">Please Enter City</p>
+		</div>
+		<div class="col-md-4">
+			<label>Door number</label>
+			<input type="number" ng-model="vendor.doorNumber" name="doorNumber" required>
+			<p ng-show="vendorForm.$submitted && vendorForm.doorNumber.$error.required" class="text-danger">Please Enter Door Number</p>
+		</div>
+<button type="submit" class="btn btn-success" ng-click="saveVendor(vendorForm)">Create</button>
+	</div>
+	</form>
+
+</div>

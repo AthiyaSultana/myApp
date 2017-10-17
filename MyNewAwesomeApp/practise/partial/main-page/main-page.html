@@ -1,0 +1,46 @@
+<div class="signupFrom">
+	<div class="pull-right">
+		<button class="btn btn-danger" ng-click="logout()">Logout</button>
+	</div>
+    <div class="col-md-12 signup" >
+        <div class="container">
+        	<div ng-if="!hideList">
+        	Filter By Price:<select ng-model="priceFilter">
+        		<option value="">Select price</option>
+        		<option value="50">50</option>
+        		<option value="70">70</option>
+        		<option value="100">100</option>
+        		<option value="120">120</option>
+        		<option value="280">280</option>
+        		<option value="340">340</option>
+        		<option value="380">380</option>
+        	</select>
+        	<div>
+        		<p class="pull-right"><b>Note:</b>Select the required items and checkout below</p>
+        	</div>
+           <div class="row" ng-repeat="list in categoriesList ">
+                      	<h3>{{list.name}}</h3>
+          
+           	<div ng-repeat="item in list.items|filter:priceFilter|orderBy:'price'">
+           		<input type="checkbox" ng-model="selectedItem[item.name]" name=""><span>{{item.name}}</span>-<span>{{item.price}}</span>
+           	</div>
+
+           </div>
+           <div>
+        	<button class="btn btn-warning text-center" ng-click="showSelectedItems()">checkout</button>
+        </div>
+    </div>
+    <div ng-if="hideList">
+    	<div>
+    	<button class="btn btn-primary" ng-click="hideLists()">Back to list</button>
+    	</div>
+    	<div class="col-md-12">
+    		Your selected items:<span ng-repeat="i in items track by $index"><b>{{i}}</b><span ng-if='!$last'><b>,</b></span></span>
+    	</div>
+    	
+    </div>
+        </div>
+
+    </div>
+  
+</div>
